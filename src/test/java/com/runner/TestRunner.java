@@ -8,11 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features = { "src/test/resources/features/studentApiFeature.feature" },
         tags = { "@Smoke" },
-        glue = {"src/test/java/com/steps/StudentApiTest.java"}/*,
-        plugin = {
-                "pretty",
-                "html:results/html/cucumber.html"
-        }*/
+        glue = {"src/test/java/com/steps/StudentApiTest.java"}
 )
 
 public class TestRunner {
